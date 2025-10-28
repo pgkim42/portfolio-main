@@ -1,0 +1,605 @@
+/* ===================================
+   CSS Variables
+   =================================== */
+:root {
+  --color-black: #000000;
+  --color-dark-gray: #333333;
+  --color-gray: #6B7280;
+  --color-light-gray: #E5E7EB;
+  --color-white: #FFFFFF;
+  --color-blue: #2563EB;
+
+  --font-base: 16px;
+  --font-large: 20px;
+  --font-xlarge: 32px;
+
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 40px;
+  --spacing-xl: 60px;
+
+  --line-height: 1.6;
+}
+
+/* ===================================
+   Reset & Base Styles
+   =================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: var(--font-base);
+  line-height: var(--line-height);
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+/* ===================================
+   Typography
+   =================================== */
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+}
+
+h2 {
+  font-size: var(--font-xlarge);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: var(--spacing-md);
+}
+
+h3 {
+  font-size: var(--font-large);
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: var(--spacing-sm);
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===================================
+   Container
+   =================================== */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* ===================================
+   Header
+   =================================== */
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-light-gray);
+  padding: var(--spacing-md) 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.nav a {
+  color: var(--color-dark-gray);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+/* ===================================
+   Hero Section
+   =================================== */
+
+.hero {
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.hero h1 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.hero .subtitle {
+  font-size: var(--font-large);
+  color: var(--color-dark-gray);
+  margin-bottom: var(--spacing-xs);
+}
+
+.hero .description {
+  color: var(--color-gray);
+  margin-bottom: 0;
+}
+
+/* ===================================
+   Section
+   =================================== */
+
+.section {
+  padding: var(--spacing-xl) 0;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-blue);
+}
+
+/* ===================================
+   About Section
+   =================================== */
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.about-intro p {
+  color: var(--color-dark-gray);
+  line-height: 1.7;
+}
+
+.about-tech h3 {
+  font-size: 18px;
+  margin-bottom: var(--spacing-md);
+}
+
+.about-tech ul {
+  list-style: none;
+}
+
+.about-tech li {
+  padding: var(--spacing-xs) 0;
+  color: var(--color-dark-gray);
+  line-height: 1.8;
+}
+
+.about-tech strong {
+  color: var(--color-black);
+  font-weight: 600;
+  display: inline-block;
+  min-width: 120px;
+}
+
+/* ===================================
+   Experience Section
+   =================================== */
+
+.experience-item {
+  margin-bottom: var(--spacing-lg);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--color-light-gray);
+}
+
+.experience-header h3 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.job-title {
+  color: var(--color-gray);
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.period {
+  color: var(--color-gray);
+  font-size: 15px;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.experience-description {
+  margin-bottom: var(--spacing-lg);
+}
+
+.experience-description p {
+  color: var(--color-dark-gray);
+  line-height: 1.7;
+}
+
+.projects-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-black);
+}
+
+.work-projects {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.work-project-item {
+  padding: var(--spacing-md);
+  background-color: var(--color-white);
+  border-left: 3px solid var(--color-blue);
+  padding-left: var(--spacing-md);
+}
+
+.work-project-item h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-black);
+}
+
+/* ===================================
+   Projects Section (Side Projects)
+   =================================== */
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.project-item {
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-light-gray);
+  border-radius: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.project-item:hover {
+  border-color: var(--color-blue);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.project-header h3 {
+  margin-bottom: 0;
+}
+
+.project-link {
+  font-size: 14px;
+  color: var(--color-blue);
+  font-weight: 500;
+}
+
+.project-desc {
+  color: var(--color-gray);
+  margin-bottom: var(--spacing-md);
+}
+
+.project-features {
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-md);
+}
+
+.project-features li {
+  position: relative;
+  padding-left: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-dark-gray);
+  line-height: 1.6;
+}
+
+.project-features li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-blue);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.project-tags span {
+  padding: 4px 12px;
+  background-color: var(--color-light-gray);
+  color: var(--color-dark-gray);
+  font-size: 13px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* ===================================
+   Skills Section
+   =================================== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.skill-category h3 {
+  font-size: 18px;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-black);
+}
+
+.skill-category ul {
+  list-style: none;
+}
+
+.skill-category li {
+  padding: var(--spacing-xs) 0;
+  color: var(--color-dark-gray);
+  line-height: 1.6;
+}
+
+/* ===================================
+   Contact Section
+   =================================== */
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.contact-info a {
+  color: var(--color-blue);
+  font-weight: 500;
+  padding: var(--spacing-xs) 0;
+}
+
+/* ===================================
+   Footer
+   =================================== */
+
+.footer {
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  background-color: var(--color-light-gray);
+}
+
+.footer p {
+  color: var(--color-gray);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-lg: 24px;
+    --spacing-xl: 40px;
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .nav {
+    gap: var(--spacing-sm);
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  .period {
+    align-self: flex-start;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-tech strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+/* ===================================
+   Print Styles (PDF Optimization)
+   =================================== */
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .header {
+    position: static;
+    border-bottom: 2px solid var(--color-black);
+    page-break-after: avoid;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .section {
+    page-break-inside: avoid;
+    padding: 20px 0;
+  }
+
+  .hero {
+    padding: 30px 0;
+  }
+
+  h1 {
+    font-size: 28pt;
+  }
+
+  h2 {
+    font-size: 20pt;
+    margin-top: 20px;
+  }
+
+  h3 {
+    font-size: 14pt;
+  }
+
+  a {
+    color: var(--color-black);
+    text-decoration: none;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: var(--color-gray);
+  }
+
+  .experience-item {
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+  }
+
+  .experience-header {
+    border-bottom: 2px solid var(--color-black);
+  }
+
+  .work-project-item {
+    page-break-inside: avoid;
+    border-left: 2px solid var(--color-black);
+    margin-bottom: 15px;
+  }
+
+  .project-item {
+    page-break-inside: avoid;
+    border: 1px solid var(--color-dark-gray);
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    background-color: transparent;
+    border-top: 1px solid var(--color-light-gray);
+  }
+}

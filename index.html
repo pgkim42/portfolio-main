@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김평기 - Backend Developer</title>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <!-- Simple Header -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">김평기</a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>김평기</h1>
+        <p class="subtitle">Backend Developer</p>
+        <p class="description">Spring Boot 백엔드 개발자</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+          <div class="about-intro">
+            <p>
+              안녕하세요. Spring Boot 백엔드 개발자입니다.<br />
+              안정적이고 확장 가능한 서버 애플리케이션을 개발합니다.
+            </p>
+            <p>
+              문제를 분석하고 효율적인 솔루션을 찾는 것을 즐기며,<br />
+              끊임없이 학습하고 코드 품질과 성능 최적화에 관심이 많습니다.
+            </p>
+          </div>
+          <div class="about-tech">
+            <h3>Tech Stack</h3>
+            <ul>
+              <li>
+                <strong>Backend</strong> Spring Boot, Spring Data JPA, Spring
+                Security
+              </li>
+              <li><strong>Database</strong> MySQL, PostgreSQL, Redis</li>
+              <li><strong>Build & Test</strong> Gradle, JUnit 5, Mockito</li>
+              <li><strong>DevOps</strong> Docker, AWS (EC2, RDS, S3), CI/CD</li>
+              <li><strong>Tools</strong> Git, IntelliJ IDEA, Postman</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3>지아이웍스</h3>
+              <p class="job-title">웹 개발자</p>
+            </div>
+            <p class="period">2025.03 ~ 현재</p>
+          </div>
+
+          <div class="experience-description">
+            <p>
+              Spring Boot 기반 백엔드 시스템 개발 및 유지보수를 담당하고
+              있습니다.
+            </p>
+          </div>
+
+          <h4 class="projects-subtitle">주요 프로젝트</h4>
+
+          <div class="work-projects">
+            <!-- Work Project 1 -->
+            <div class="work-project-item">
+              <h5>위즈커넥트 서비스 개발</h5>
+              <p class="project-desc">
+                평가위원 후보자 모집 공고를 다양한 사이트에서 수집해 모아서
+                보여주고, 신청서를 대행작성해주는 서비스
+              </p>
+              <ul class="project-features">
+                <li>데이터베이스 ERD 설계 및 공고/북마크 도메인 모델링</li>
+                <li>
+                  Python(Selenium, BeautifulSoup) 기반 크롤링 시스템 개발 및
+                  데이터 수집 자동화
+                </li>
+                <li>공고 조회/검색/필터링 및 북마크 기능 RESTful API 개발</li>
+                <li>PM 역할 수행 - 프로젝트 기획, 일정 관리 및 개발 조율</li>
+              </ul>
+              <div class="project-tags">
+                <span>Spring Boot 3</span>
+                <span>JPA</span>
+                <span>MySQL</span>
+                <span>Python</span>
+                <span>Selenium</span>
+              </div>
+            </div>
+
+            <!-- Work Project 2 -->
+            <div class="work-project-item">
+              <h5>LED 전광판 견적 계산기</h5>
+              <p class="project-desc">
+                간편견적/전문견적으로 나눠 LED 전광판에 대해 잘 아는 사람과
+                모르는 사람 모두 쉽게 사용할 수 있는 견적 계산 서비스
+              </p>
+              <ul class="project-features">
+                <li>
+                  간편견적/전문견적 2단계 시스템 설계 및 구현 (초보자~전문가
+                  모두 접근 가능)
+                </li>
+                <li>
+                  LED 전광판 가격 계산 로직 및 견적서 생성 API 개발 (Node.js)
+                </li>
+                <li>1인 개발로 기획부터 배포까지 전체 개발 사이클 담당</li>
+                <li>
+                  실서비스 배포 및 운영 (<a
+                    href="https://order.lumenix.co.kr/"
+                    target="_blank"
+                    >order.lumenix.co.kr</a
+                  >)
+                </li>
+              </ul>
+              <div class="project-tags">
+                <span>Node.js</span>
+                <span>React</span>
+              </div>
+            </div>
+
+            <!-- Work Project 3 -->
+            <div class="work-project-item">
+              <h5>나라장터 감지 알림 PWA 앱</h5>
+              <p class="project-desc">
+                조달청 나라장터 API를 이용해 데이터를 수집하고, 특정 키워드가
+                제목에 포함된 공고가 올라오면 푸시로 알려주는 PWA 백오피스 앱
+              </p>
+              <ul class="project-features">
+                <li>
+                  조달청 나라장터 API 연동 및 공고 데이터 수집 시스템 구축
+                </li>
+                <li>키워드 기반 필터링 및 조건 검색 기능 개발</li>
+                <li>FCM 기반 실시간 푸시 알림 시스템 구현</li>
+                <li>PWA 기술을 활용한 모바일 최적화 백오피스 앱 개발</li>
+              </ul>
+              <div class="project-tags">
+                <span>Node.js</span>
+                <span>React</span>
+                <span>FCM</span>
+                <span>PWA</span>
+              </div>
+            </div>
+
+            <!-- Work Project 4 -->
+            <div class="work-project-item">
+              <h5>국립과천과학관 디지털가이드</h5>
+              <p class="project-desc">
+                과학탐구관 내 전시물을 안내하는 위치 기반 가이드 앱
+              </p>
+              <ul class="project-features">
+                <li>Beacon 블루투스 기반 위치 인식 시스템 설계 및 API 개발</li>
+                <li>전시물 데이터베이스 ERD 설계 및 콘텐츠 관리 API 구축</li>
+                <li>위치 기반 자동 해설 제공 RESTful API 개발</li>
+                <li>
+                  입사 후 첫 외주 프로젝트로 기획부터 배포까지 진행 경험 (<a
+                    href="https://apps.apple.com/us/app/%EA%B5%AD%EB%A6%BD%EA%B3%BC%EC%B2%9C%EA%B3%BC%ED%95%99%EA%B4%80-%EB%94%94%EC%A7%80%ED%84%B8%EA%B0%80%EC%9D%B4%EB%93%9C/id6744019613"
+                    target="_blank"
+                    >App Store</a
+                  >)
+                </li>
+              </ul>
+              <div class="project-tags">
+                <span>Spring Boot 3</span>
+                <span>JPA</span>
+                <span>Beacon</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <ul>
+              <li>Spring Boot 3.x</li>
+              <li>Spring Data JPA</li>
+              <li>Spring Security</li>
+              <li>Spring MVC</li>
+              <li>RESTful API Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>Database</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>Redis (Caching)</li>
+              <li>JPA / Hibernate</li>
+              <li>Database Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>DevOps</h3>
+            <ul>
+              <li>Docker / Docker Compose</li>
+              <li>AWS (EC2, RDS, S3)</li>
+              <li>CI/CD (Gitlab Actions)</li>
+              <li>Linux Server Management</li>
+              <li>Nginx</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools & Others</h3>
+            <ul>
+              <li>Git / Gitlab</li>
+              <li>Gradle / Maven</li>
+              <li>IntelliJ IDEA, Visual Studio Code</li>
+              <li>Postman, HTTPie</li>
+              <li>JUnit 5, Mockito</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+          <a href="mailto:vakon1@daum.net">vakon1@daum.net</a>
+          <a href="https://github.com/pgkim42" target="_blank"
+            >github.com/pgkim42</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 김평기. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
