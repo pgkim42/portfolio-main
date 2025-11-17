@@ -301,6 +301,45 @@ ul {
 }
 
 /* ===================================
+   Project Images
+   =================================== */
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.project-image-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.project-image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--color-light-gray);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.project-image-item img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.image-caption {
+  font-size: 13px;
+  color: var(--color-gray);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* ===================================
    Projects Section (Side Projects)
    =================================== */
 
@@ -495,6 +534,11 @@ ul {
   .contact-info {
     flex-direction: column;
     align-items: center;
+    gap: var(--spacing-sm);
+  }
+
+  .project-images {
+    grid-template-columns: 1fr;
     gap: var(--spacing-sm);
   }
 }
